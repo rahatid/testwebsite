@@ -1,0 +1,53 @@
+.container{
+    display: grid;
+    grid-template-columns: 200px, 400px, 200px, 200px;
+    grid-template-rows: 100px 450px 200px 500px;
+    
+}
+body{
+    background-color:burlywood;
+}
+header{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row: 1;
+}
+.section{
+    font-size: 20pt;
+    padding: 20px;
+}
+.image{
+    font-size: 35px;
+    grid-column: 1;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+#about-me{
+    grid-row: 3;
+    grid-column: 5;
+}
+#education-and-qualifications{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column:2;
+}
+#skills-and-achievements{
+    grid-row: 3;
+    grid-column: 2;
+
+}
+
+#login{
+    grid-row: 2;
+    grid-column:2/5;
+}
+#Contacts
+{
+    grid-row: 2;
+    grid-column: 5;
+     /* Green */
+}
+#Blog{
+    grid-row: 3;
+    grid-column: 4;
+}

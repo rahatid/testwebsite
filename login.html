@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="BLOG.css" type="text/css" />
+    <link rel="stylesheet" href="reset.css" type="text/css" />
+    <script src="test.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="mobile.css"
+      media="screen and (max-width:500px)"
+    />
+    <title>Document</title>
+  </head>
+  <header>
+  <section class="section">
+    <nav>
+      <ul>
+        <a href="AboutME.html">About Me</a>
+        <a href="SKLnACH.html">Skills </a>
+        <a href="aboutmeEXP.html">Education </a>
+        <!-- <a href="aboutmeEXP.html">Experience</a> -->
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contacts.html">Contact</a>
+        <a href="viewBlog.php">View blogs</a>
+        <!-- <a href="BLOG.html">Blog</a>
+        <a href="loginpage.php">Log in</a>
+        <a href="logout.php">Log out</a> -->
+        <?php
+        if(isset($_SESSION["email"]))
+        {
+          echo "<a href="logout.php">Log out</a>";
+          echo "<a href="BLOG.html">Blog</a>";
+        }
+        else{
+          echo "<a href="loginpage.php">Log in</a>";
+        }
+        ?>
+      </ul>
+    </nav>
+  </section>
+  </header>
+  <body>
+    <div class="container">
+      <header>
+        <h1 class="h1">R.Id</h1>
+        <h2 class="h2">Welcome to my Blog</h2>
+      </header>
+      <fielset>
+        <legend>
+          <div id="logintable">
+            <form action="login.php" method="post">
+              <label for="Email">Email:</label> <br />
+              <input type="email" id="email" name="email" required />
+              <br />
+              <label for="password">Password:</label> <br />
+              <input type="password" id="password" name="password" required />
+              <br />
+              <input type="submit" value="LOGIN" class="submit" />
+            </form>
+          </div>
+        </legend>
+      </fielset>
+    </div>
+  </body>
+</html>

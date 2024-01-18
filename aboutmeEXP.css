@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+/* import of google fonts */
+.container {
+  display: grid;
+  grid-template-columns: 400px, 400px, 400px, auto;
+  grid-template-rows: auto, auto, auto, auto, auto;
+}
+/* use of class */
+a {
+  padding: 3em;
+}
+body {
+  background-color: rgb(83, 100, 118);
+}
+.section {
+  grid-column-start: 1;
+  grid-row: 1;
+  grid-column-end: 5;
+  font-size: 1.33em;
+  padding: 10px;
+  font-family: Anton;
+}
+header {
+  grid-column: 2;
+  grid-row: 2;
+}
+.image {
+  grid-column: 1;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+footer {
+  grid-column: 1;
+  grid-row: 5;
+  font-size: 1.5em;
+  font-family: Anton;
+}
+.h1 {
+  font-size: 2em;
+}
+.h2 {
+  font-size: 1.5em;
+  font-family: Anton;
+}
+#Contacts {
+  font-size: 1.5em;
+  font-family: Anton;
+}
